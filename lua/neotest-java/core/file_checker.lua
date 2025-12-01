@@ -23,6 +23,7 @@ function FileChecker.is_test_file(file_path)
   print(root)
 
   local relative_path = path:new(file_path):make_relative(root)
+  print(relative_path)
   if string.find(relative_path, "/main/") then
     return false
   end
